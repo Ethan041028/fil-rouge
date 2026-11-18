@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fil rouge – Tâches</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f4f5f7; margin: 0; padding: 2rem 1rem; color: #222; }
+    main { max-width: 32rem; margin: 0 auto; background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+    h1 { margin-top: 0; font-size: 1.5rem; }
+    form { display: flex; gap: .5rem; margin-bottom: 1rem; }
+    input[type=text] { flex: 1; padding: .5rem; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: .5rem .8rem; border: 0; border-radius: 4px; background: #326ce5; color: #fff; cursor: pointer; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { display: flex; align-items: center; gap: .5rem; padding: .5rem 0; border-bottom: 1px solid #eee; }
+    li span { flex: 1; }
+    li.done span { text-decoration: line-through; color: #999; }
+    li button { background: #e5484d; }
+    #error { color: #e5484d; min-height: 1.2em; }
+    footer { margin-top: 1rem; font-size: .85rem; color: #666; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Liste de tâches</h1>
+    <form id="add-form">
+      <input id="title" type="text" placeholder="Nouvelle tâche…" required>
+      <button type="submit">Ajouter</button>
+    </form>
+    <p id="error"></p>
+    <ul id="tasks"></ul>
+    <footer>Front <strong id="front-version"></strong> · API <strong id="api-version">?</strong></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
