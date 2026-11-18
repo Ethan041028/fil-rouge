@@ -48,7 +48,7 @@ Le workflow construit `api` et `web` en parallèle sur un runner `ubuntu-latest`
 | `ghcr.io/<owner>/fil-rouge-api:<tag>` | `ghcr.io/<owner>/fil-rouge-api:v1.0.0` |
 | `ghcr.io/<owner>/fil-rouge-web:<tag>` | `ghcr.io/<owner>/fil-rouge-web:v1.0.0` |
 
-`<owner>` est le compte GitHub propriétaire du dépôt, en minuscules. Le tag d'image est exactement le tag git, **avec le `v`** (`v1.0.0`).
+`<owner>` est le compte GitHub propriétaire du dépôt, mis en minuscules par le workflow. Ici : `ghcr.io/ethan041028/fil-rouge-api:v1.0.0`. Le tag d'image est exactement le tag git, **avec le `v`** (`v1.0.0`).
 
 Le suivi se fait dans l'onglet **Actions** du dépôt, les images apparaissent dans **Packages**.
 
